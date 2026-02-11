@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
       <div className="max-w-6xl mx-auto p-4">
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Navigate to="/" replace />} />
 
           {/* NO AUTH (TEST MODE) */}
           <Route path="/" element={<Dashboard />} />
